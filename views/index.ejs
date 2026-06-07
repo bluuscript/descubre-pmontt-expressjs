@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descubre Puerto Montt | Web</title>
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#inicio"><i class="bi bi-compass-fill text-warning me-2"></i>Descubre Puerto Montt<span>.</span></a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#atractivos">Atractivos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gastronomia">Gastronomía</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mapa">Mapa</a></li>
+        <li class="nav-item ms-lg-2">
+          <button class="btn btn-warning rounded-pill fw-bold px-3" data-bs-toggle="modal" data-bs-target="#authModal">
+            <i class="bi bi-person-circle me-1"></i>Ingresar
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header id="inicio" class="hero">
+  <div class="container hero-content">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="hero-badge"><i class="bi bi-geo-alt-fill text-warning"></i> Plataforma turística definitiva</span>
+        <h1>Explora, planifica y vive Puerto Montt</h1>
+        <p>
+          Plataforma web turística con atractivos, gastronomía, menús, login, registro, recuperación de contraseña,
+          favoritos, itinerario, presupuesto, reseñas, contacto y panel personalizado.
+        </p>
+        <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+          <a href="#atractivos" class="btn btn-main"><i class="bi bi-map me-2"></i>Ver lugares</a>
+          <button class="btn btn-outline-light-custom" data-bs-toggle="modal" data-bs-target="#registerModal">
+            <i class="bi bi-person-plus me-2"></i>Crear cuenta
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="hero-panel">
+          <h5 class="fw-bold mb-3"><i class="bi bi-stars text-warning me-2"></i>Funciones principales</h5>
+          <div class="mini-feature"><i class="bi bi-person-lock"></i><span>Login, registro y recuperación de contraseña.</span></div>
+          <div class="mini-feature"><i class="bi bi-cup-hot"></i><span>Menús recomendados y platos típicos.</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="atractivos">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <span class="section-kicker">Explora la comuna</span>
+      <h2>Atractivos, sectores y experiencias</h2>
+      <p>Cada tarjeta incluye detalles, costos, menú recomendado, menú de la casa y consejos útiles.</p>
+    </div>
+    <div id="placesGrid" class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/mercado-angelmo.jpg" alt="Mercado Angelmó">
+            <span class="place-tag">Gastronomía</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Mercado Angelmó</h5>
+            <p class="text-secondary">Sector tradicional reconocido por sus cocinerías, mariscos, pescados y artesanía local.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">2 a 3 horas</span>
+              <span class="meta-pill">Medio</span>
+              <span class="meta-pill">Media</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Mariscos</small>
+              <small class="badge rounded-pill text-bg-light">Artesanía</small>
+              <small class="badge rounded-pill text-bg-light">Mercado</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/costanera-puerto-montt.jpg" alt="Costanera de Puerto Montt">
+            <span class="place-tag">Naturaleza</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Costanera de Puerto Montt</h5>
+            <p class="text-secondary">Paseo urbano frente al mar, ideal para observar el Seno de Reloncaví y tomar fotografías.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">45 min a 1 hora</span>
+              <span class="meta-pill">Gratis</span>
+              <span class="meta-pill">Corta</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Borde costero</small>
+              <small class="badge rounded-pill text-bg-light">Vista al mar</small>
+              <small class="badge rounded-pill text-bg-light">Caminata</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/catedral-puerto-montt.jpeg" alt="Catedral de Puerto Montt">
+            <span class="place-tag">Cultura</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Catedral de Puerto Montt</h5>
+            <p class="text-secondary">Punto relevante del centro asociado a la identidad histórica y religiosa de la ciudad.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">30 a 45 min</span>
+              <span class="meta-pill">Gratis</span>
+              <span class="meta-pill">Corta</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Centro</small>
+              <small class="badge rounded-pill text-bg-light">Patrimonio</small>
+              <small class="badge rounded-pill text-bg-light">Arquitectura</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/volcan-osorno.jpg" alt="Volcán Osorno">
+            <span class="place-tag">Naturaleza</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Volcán Osorno</h5>
+            <p class="text-secondary">Impresionante volcán con vistas panorámicas, accesible desde Puerto Montt hacia la zona de Llanquihue.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">Día completo</span>
+              <span class="meta-pill">Medio</span>
+              <span class="meta-pill">Larga</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Volcán</small>
+              <small class="badge rounded-pill text-bg-light">Paisaje</small>
+              <small class="badge rounded-pill text-bg-light">Senderismo</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/lago-llanquihue.jpg" alt="Lago Llanquihue">
+            <span class="place-tag">Naturaleza</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Lago Llanquihue</h5>
+            <p class="text-secondary">El lago más grande de Chile, con aguas cristalinas y paisajes impresionantes de la zona sur.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">Día completo</span>
+              <span class="meta-pill">Variable</span>
+              <span class="meta-pill">Larga</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Lago</small>
+              <small class="badge rounded-pill text-bg-light">Paisaje</small>
+              <small class="badge rounded-pill text-bg-light">Fotografía</small>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="place-card">
+          <div class="place-img">
+            <img src="/img/galeria/isla-chiloe.jpg" alt="Isla de Chiloé">
+            <span class="place-tag">Cultura</span>
+          </div>
+          <div class="place-body">
+            <h5 class="fw-bold">Isla de Chiloé</h5>
+            <p class="text-secondary">Isla mágica con arquitectura única, iglesias patrimoniales, cultura y gastronomía tradicional.</p>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="meta-pill">Día completo</span>
+              <span class="meta-pill">Variable</span>
+              <span class="meta-pill">Larga</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <small class="badge rounded-pill text-bg-light">Isla</small>
+              <small class="badge rounded-pill text-bg-light">Patrimonio</small>
+              <small class="badge rounded-pill text-bg-light">Cultura</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gastronomia" class="pt-0">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <span class="section-kicker">Gastronomía local</span>
+      <h2>Menús sugeridos y platos típicos</h2>
+      <p>Una sección pensada para que el turista vea rápidamente qué comer según el sector que visite.</p>
+    </div>
+    <div id="foodGrid" class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Mercado Angelmó</h5>
+          <p class="text-secondary">Paila marina o curanto en olla acompañado de sopaipillas y pebre sureño.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Paila marina</span><span class="price-tag">$9.500</span></li>
+            <li><span>Curanto en olla</span><span class="price-tag">$12.000</span></li>
+            <li><span>Empanada de mariscos</span><span class="price-tag">$2.800</span></li>
+            <li><span>Salmón con papas chilotas</span><span class="price-tag">$11.500</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Costanera</h5>
+          <p class="text-secondary">Café al paso, chocolate caliente o snack para caminar frente al mar.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Café o chocolate caliente</span><span class="price-tag">$2.500</span></li>
+            <li><span>Kuchen sureño</span><span class="price-tag">$3.000</span></li>
+            <li><span>Sándwich simple</span><span class="price-tag">$4.500</span></li>
+            <li><span>Agua o bebida</span><span class="price-tag">$1.500</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Centro de Puerto Montt</h5>
+          <p class="text-secondary">Colación urbana: completo, churrasco, café o menú del día.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Menú del día</span><span class="price-tag">$6.500</span></li>
+            <li><span>Completo italiano</span><span class="price-tag">$3.000</span></li>
+            <li><span>Churrasco</span><span class="price-tag">$5.500</span></li>
+            <li><span>Café</span><span class="price-tag">$2.500</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Zona Llanquihue</h5>
+          <p class="text-secondary">Tradicional: curanto, pescado frito y postres sureños.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Curanto al hoyo</span><span class="price-tag">$15.000</span></li>
+            <li><span>Pescado frito con papas</span><span class="price-tag">$8.000</span></li>
+            <li><span>Milcao con chicharrones</span><span class="price-tag">$4.500</span></li>
+            <li><span>Kuchen de frutos del bosque</span><span class="price-tag">$3.500</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Isla de Chiloé</h5>
+          <p class="text-secondary">Curanto, pulmay, chapaleles y comida tradicional isleña.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Curanto chilote</span><span class="price-tag">$12.000</span></li>
+            <li><span>Pulmay</span><span class="price-tag">$10.000</span></li>
+            <li><span>Chapaleles</span><span class="price-tag">$3.000</span></li>
+            <li><span>Milcaos</span><span class="price-tag">$2.500</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="food-card">
+          <h5 class="fw-bold"><i class="bi bi-cup-hot text-warning me-2"></i>Caletas Pesqueras</h5>
+          <p class="text-secondary">Mariscos frescos, pescado del día y productos del mar.</p>
+          <ul class="menu-list mb-3">
+            <li><span>Mariscal frío</span><span class="price-tag">$9.000</span></li>
+            <li><span>Sopa de mariscos</span><span class="price-tag">$7.500</span></li>
+            <li><span>Empanada de mariscos</span><span class="price-tag">$2.800</span></li>
+            <li><span>Pescado frito</span><span class="price-tag">$8.000</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <span class="section-kicker">Servicios</span>
+      <h2>Servicios útiles para turistas</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="service-mini"><i class="bi bi-house-heart"></i><div><h5>Hospedaje</h5><p class="text-secondary mb-0">Hoteles, hostales, cabañas y alojamiento cercano.</p></div></div></div>
+      <div class="col-md-4"><div class="service-mini"><i class="bi bi-bus-front"></i><div><h5>Transporte</h5><p class="text-secondary mb-0">Rutas, terminales, taxis, buses y conectividad.</p></div></div></div>
+      <div class="col-md-4"><div class="service-mini"><i class="bi bi-shield-check"></i><div><h5>Seguridad</h5><p class="text-secondary mb-0">Emergencias: 133 Carabineros, 131 Ambulancia, 132 Bomberos.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa" class="pt-0">
+  <div class="container">
+    <div class="section-title text-center mb-5">
+      <span class="section-kicker">Mapa</span>
+      <h2>Ubicación general de Puerto Montt</h2>
+    </div>
+    <div class="map-box">
+      <iframe title="Mapa Puerto Montt" src="https://www.google.com/maps?q=Puerto%20Montt,%20Chile&output=embed" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="contact-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5">
+        <span class="section-kicker bg-warning text-dark">Contacto</span>
+        <h2 class="fw-bold display-6">Envía sugerencias</h2>
+        <p class="text-white-50">Formulario simulado para recibir comentarios de turistas, emprendedores o administradores.</p>
+      </div>
+      <div class="col-lg-7">
+        <div class="glass-card p-4">
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6"><input class="form-control" placeholder="Nombre" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Correo" required></div>
+              <div class="col-12"><textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea></div>
+              <div class="col-12 d-grid d-md-flex justify-content-md-end"><button class="btn btn-main">Enviar</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h4 class="fw-bold text-white"><i class="bi bi-compass-fill text-warning me-2"></i>Descubre Puerto Montt</h4>
+        <p>Website definitivo front-end para proyecto académico de Gestión de Proyectos.</p>
+      </div>
+      <!-- <div class="col-lg-3">
+        <h6 class="fw-bold text-white">Usuario demo</h6>
+        <p>turista@demo.cl<br>123456</p>
+      </div> -->
+      <div class="col-lg-3">
+        <h6 class="fw-bold text-white">Incluye</h6>
+        <p>Incio de sesión, registro de usuario, olvidé mi contraseña, favoritos, menú, dashboard y mapa.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal fade" id="authModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Iniciar sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form id="loginForm" method="POST" action="/api/auth/login">
+          <input id="loginEmail" name="email" type="email" class="form-control mb-3" placeholder="Correo" required>
+          <input id="loginPassword" name="password" type="password" class="form-control mb-3" placeholder="Contraseña" required>
+          <button class="btn btn-main w-100">Ingresar</button>
+        </form>
+        <div class="d-flex justify-content-between mt-3">
+          <button type="button" class="link-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Crear cuenta</button>
+          <button type="button" class="link-btn" data-bs-toggle="modal" data-bs-target="#forgotModal">Olvidé mi contraseña</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registerModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Crear cuenta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form id="registerForm" method="POST" action="/api/user/register">
+          <input id="registerName" name="name" class="form-control mb-3" placeholder="Nombre completo" required>
+          <input id="registerEmail" name="email" type="email" class="form-control mb-3" placeholder="Correo" required>
+          <div class="position-relative mb-3">
+            <input id="registerPassword" name="password" type="password" class="form-control pe-5" placeholder="Contraseña" pattern="^(?=.*[a-zA-Z])(?=.*[0-9]).{6,}$" title="La contraseña debe tener al menos 6 caracteres e incluir letras y números" required>
+            <button type="button" class="btn position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-secondary" onclick="togglePassword('registerPassword', this)">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+          <div class="position-relative mb-3">
+            <input id="registerConfirmPassword" name="confirmPassword" type="password" class="form-control pe-5" placeholder="Confirmar contraseña" required>
+            <button type="button" class="btn position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent text-secondary" onclick="togglePassword('registerConfirmPassword', this)">
+              <i class="bi bi-eye"></i>
+            </button>
+          </div>
+          <small id="passwordHelp" class="text-secondary">Mínimo 6 caracteres, debe incluir letras y números</small>
+          <small id="passwordMatch" class="text-danger d-none">Las contraseñas no coinciden</small>
+          <button class="btn btn-main w-100 mt-3">Registrarme</button>
+        </form>
+        <button type="button" class="link-btn mt-3" data-bs-toggle="modal" data-bs-target="#authModal">Volver al login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="forgotModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold">Recuperar contraseña</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <p class="text-secondary">Ingresa tu correo. Se simulará el envío de un enlace de recuperación.</p>
+        <form id="forgotForm" method="POST" action="/api/auth/forgot">
+          <input id="forgotEmail" name="email" type="email" class="form-control mb-3" placeholder="Correo registrado" required>
+          <button class="btn btn-main w-100">Enviar recuperación</button>
+        </form>
+        <button type="button" class="link-btn mt-3" data-bs-toggle="modal" data-bs-target="#authModal">Volver al login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+<script src="/sweetalert2/sweetalert2.all.min.js"></script>
+
+<script>
+  <% if (error === 'credenciales') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'error',
+      title: 'Credenciales incorrectas'
+    });
+  <% } %>
+
+  <% if (error === 'sesion') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'error',
+      title: 'Error al cerrar sesión'
+    });
+  <% } %>
+
+  <% if (registro === 'exitoso') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'success',
+      title: '¡Registro exitoso! Ahora puedes iniciar sesión'
+    });
+  <% } %>
+
+  <% if (registro === 'error') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'error',
+      title: 'Error en el registro'
+    });
+  <% } %>
+
+  <% if (registro === 'existe') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'warning',
+      title: 'El email ya está registrado'
+    });
+  <% } %>
+
+  <% if (correo === 'enviado') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Correo enviado con tu nueva contraseña'
+    });
+  <% } %>
+
+  <% if (correo === 'error') { %>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    });
+
+    Toast.fire({
+      icon: 'error',
+      title: 'Error al enviar el correo'
+    });
+  <% } %>
+  const sections = document.querySelectorAll("section, header[id]");
+  const navLinks = document.querySelectorAll(".nav-link[href^='#']");
+  const navbarHeight = 80;
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - navbarHeight - 20;
+      const sectionBottom = sectionTop + section.offsetHeight;
+      
+      if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+  window.dispatchEvent(new Event("scroll"));
+
+  // Validación en tiempo real de contraseña
+  document.getElementById('registerPassword').addEventListener('input', function(e) {
+    const password = e.target.value;
+    const passwordHelp = document.getElementById('passwordHelp');
+    
+    // Validar longitud mínima de 6 caracteres
+    const hasMinLength = password.length >= 6;
+    // Validar que tenga letras
+    const hasLetter = /[a-zA-Z]/.test(password);
+    // Validar que tenga números
+    const hasNumber = /[0-9]/.test(password);
+    
+    if (hasMinLength && hasLetter && hasNumber) {
+      passwordHelp.classList.remove('text-danger');
+      passwordHelp.classList.add('text-success');
+    } else {
+      passwordHelp.classList.remove('text-success');
+      passwordHelp.classList.add('text-danger');
+    }
+  });
+
+  // Validar contraseñas en tiempo real
+  const registerPassword = document.getElementById('registerPassword');
+  const registerConfirmPassword = document.getElementById('registerConfirmPassword');
+  const passwordMatch = document.getElementById('passwordMatch');
+
+  function validatePasswordMatch() {
+    if (registerConfirmPassword.value === '') {
+      passwordMatch.classList.add('d-none');
+      return;
+    }
+
+    if (registerPassword.value !== registerConfirmPassword.value) {
+      passwordMatch.classList.remove('d-none');
+      registerConfirmPassword.classList.add('is-invalid');
+    } else {
+      passwordMatch.classList.add('d-none');
+      registerConfirmPassword.classList.remove('is-invalid');
+      registerConfirmPassword.classList.add('is-valid');
+    }
+  }
+
+  registerConfirmPassword.addEventListener('input', validatePasswordMatch);
+  registerPassword.addEventListener('input', validatePasswordMatch);
+
+  // Validar contraseñas antes de enviar formulario de registro
+  document.getElementById('registerForm').addEventListener('submit', function(e) {
+    const password = document.getElementById('registerPassword').value;
+    const confirmPassword = document.getElementById('registerConfirmPassword').value;
+
+    if (password !== confirmPassword) {
+      e.preventDefault();
+      passwordMatch.classList.remove('d-none');
+      return;
+    }
+
+    passwordMatch.classList.add('d-none');
+    
+    const modalElement = document.getElementById('registerModal');
+    const modal = bootstrap.Modal.getInstance(modalElement);
+    if (modal) {
+      modal.hide();
+    }
+  });
+
+  // Función para alternar visibilidad de contraseña
+  function togglePassword(inputId, button) {
+    const input = document.getElementById(inputId);
+    const icon = button.querySelector('i');
+    
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.classList.remove('bi-eye');
+      icon.classList.add('bi-eye-slash');
+    } else {
+      input.type = 'password';
+      icon.classList.remove('bi-eye-slash');
+      icon.classList.add('bi-eye');
+    }
+  }
+
+  // Cerrar modal de forgot al enviar formulario
+  document.getElementById('forgotForm').addEventListener('submit', function(e) {
+    const modalElement = document.getElementById('forgotModal');
+    const modal = bootstrap.Modal.getInstance(modalElement);
+    if (modal) {
+      modal.hide();
+    }
+  });
+</script>
+
+</body>
+</html>
