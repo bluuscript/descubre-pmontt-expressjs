@@ -11,9 +11,9 @@ CREATE TABLE usuario (
   creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Ejemplos de INSERT INTO usuario
+-- Ejemplos de INSERT INTO usuario contraseña: inacap.2026
 INSERT INTO usuario (nombre, email, password, interes_principal, tipo_viaje, preferencias)
-VALUES ('Descubre Puerto Montt', 'descubre.pmontt@gmail.com', 'inacap.2026', 'Naturaleza', 'Turismo relajado', 'Me interesa conocer naturaleza, gastronomía local y lugares con buena vista para fotografías.');
+VALUES ('Descubre Puerto Montt', 'descubre.pmontt@gmail.com', '$2b$10$7TMtejbh0KXys7p1Y.mTGeRmHiGrZ7APFp1Jafvym16FZhis6EtcG', 'Naturaleza', 'Turismo relajado', 'Me interesa conocer naturaleza, gastronomía local y lugares con buena vista para fotografías.');
 
 -- Crear tabla lugares
 CREATE TABLE lugar (
